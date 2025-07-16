@@ -44,7 +44,7 @@ class SpeechViewerFrame(
 			title=_("NVDA Speech Viewer"),
 			size=dialogSize,
 			pos=dialogPos,
-			style=wx.CAPTION | wx.CLOSE_BOX | wx.RESIZE_BORDER | wx.STAY_ON_TOP,
+			style=wx.CAPTION | wx.CLOSE_BOX | wx.RESIZE_BORDER | wx.STAY_ON_TOP | wx.MINIMIZE_BOX,
 		)
 		post_sessionLockStateChanged.register(self.onSessionLockStateChange)
 		self._isDestroyed = False
